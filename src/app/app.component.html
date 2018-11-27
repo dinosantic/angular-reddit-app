@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="form-container"> 
+      <form class="example-form">
+          <h3>Add a Link</h3>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Title" name="title" #newtitle>
+          </mat-form-field>
+        
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Link" name="link" #newlink>
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="addArticle(newtitle, newlink)">Submit link</button>
+        </form>
+  </div>
+  <div class="article">
+      <app-article
+      *ngFor="let foobar of sortedArticles()"
+      [article]="foobar"></app-article>
+  </div>
+</div><!--main-container end-->

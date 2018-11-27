@@ -1,0 +1,35 @@
+.content {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    -ms-grid-column: 3fr 9fr;
+    padding: 0 1rem; 
+    background-color: #ffde03;
+    margin-top: 1rem;
+    border: 1px solid #0336ff;
+}
+.votes {
+    display: -ms-grid;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}
+.value {
+    justify-self: center;
+    align-self: auto;
+    font-size: 200%;
+}
+span {
+    list-style: none;
+    display: inline;
+}
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.downvote {
+    margin-left: 1rem;
+}
+mat-icon {
+    font-size: 90%;
+}

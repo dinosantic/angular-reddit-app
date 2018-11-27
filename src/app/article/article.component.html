@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="votes">
+    <div class="value">
+      {{ article.votes }}
+    </div>
+    <div class="label">
+      Points
+    </div>
+  </div>
+  <div>
+    <h3><a href="{{ article.link }}">{{ article.title }}</a></h3>
+      <span>
+        <a href (click)="voteUp()">
+          <i><mat-icon>arrow_upward</mat-icon></i>upvote
+        </a>
+      </span>
+      <span>
+          <a class="downvote" href (click)="voteDown()"> 
+            <i><mat-icon>arrow_downward</mat-icon></i>downvote
+          </a>
+      </span>
+  </div>
+</div><!--content end-->
